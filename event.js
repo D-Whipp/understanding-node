@@ -28,6 +28,7 @@ const server = http.createServer();
 
 server.on("request", (req, res) => {
   console.log("Hello Seattle, I'm listening...");
+  console.log(req.url);
   res.end("- Frasier");
 });
 
